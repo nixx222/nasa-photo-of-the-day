@@ -1,0 +1,48 @@
+/* Basic styling for the container */
+#container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling the H1 title and button container with a black rectangle border */
+#container {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* NASA Photos container grid layout */
+#nasa-photos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Grid for tablet and desktop */
+@media (min-width: 768px) {
+    #nasa-photos-container {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    #nasa-photos-container {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+/* Hide the border once the photos are shown */
+.hide-border {
+    border: none;
+}
